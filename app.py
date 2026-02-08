@@ -277,7 +277,7 @@ def teacher():
     return render_template("teacher.html")
 
 
-@app.route("/student-new", methods=["GET", "POST"])
+# @app.route("/student-new", methods=["GET", "POST"])
 @app.route("/student_new", methods=["GET", "POST"])
 def student_new():
     firebase_config = get_firebase_config()
@@ -782,5 +782,6 @@ if __name__ == "__main__":
     # migrate_achievements_table()
     add_teacher_id_column()
     app.run(debug=True)
+
 
 
